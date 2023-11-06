@@ -43,7 +43,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha ./test/test*.js --reporter spec",
-    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec",
+    "pm2": "pm2 start yarn --name cors -- start -p 8000"
+
   },
   "engines": {
     "node": ">=0.10.0"
